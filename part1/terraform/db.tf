@@ -9,7 +9,7 @@ module "db" {
   major_engine_version = "5.7"
   engine_version       = "5.7.19"
   
-  db_name = "demodb"
+  name = "demodb"
   username = "user"
   password = "demouser!"
   port     = "3306"
