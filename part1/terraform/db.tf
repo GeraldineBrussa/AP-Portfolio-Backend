@@ -2,7 +2,7 @@ module "db" {
   source  = "terraform-aws-modules/rds/aws"
   version = "3.3.0"
 
-  identifier = "demodb"
+  identifier = "demodb-grb"
 
   engine               = "mysql"
   family               = "mysql5.7"
