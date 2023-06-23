@@ -25,7 +25,7 @@ module "db" {
   subnet_ids = module.vpc.public_subnets
 
   monitoring_interval = "30"
-  monitoring_role_name = "MyRDSMonitoringRole"
+  monitoring_role_name = "MyRDSMonitoringRole-grb"
   create_monitoring_role = true
 
   parameters = [
