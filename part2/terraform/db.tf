@@ -2,14 +2,14 @@ module "db" {
   source  = "terraform-aws-modules/rds/aws"
   version = "3.3.0"
 
-  identifier = "demodb"
+  identifier = "dbgrb"
 
   engine               = "mysql"
   family               = "mysql5.7"
   major_engine_version = "5.7"
-  engine_version       = "5.7.19"
+  engine_version       = "5.7.37"
   
-  name     = "demodb"
+  name     = "dbgrb"
   username = "user"
   password = "demouser!"
   port     = "3306"
@@ -25,7 +25,7 @@ module "db" {
   subnet_ids = module.vpc.public_subnets
 
   monitoring_interval = "30"
-  monitoring_role_name = "MyRDSMonitoringRole"
+  monitoring_role_name = "MyRDSMonitoringRole-dbgrb"
   create_monitoring_role = true
 
   parameters = [
